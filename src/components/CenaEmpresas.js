@@ -4,7 +4,6 @@ import BarraNavegacao from './BarraNavegacao';
 import { StackNavigator } from 'react-navigation';
 
 const imgDetalhe = require('../imgs/detalhe_empresa.png');
-
 const corDeFundo = '#EC7148';
 
 export default class CenaEmpresas extends Component {

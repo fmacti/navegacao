@@ -4,9 +4,6 @@ import BarraNavegacao from './BarraNavegacao';
 import { StackNavigator } from 'react-navigation';
 
 const imgDetalhe = require('../imgs/detalhe_contato.png');
-const cliente1 = require('../imgs/cliente1.png');
-const cliente2 = require('../imgs/cliente2.png');
-
 const corDeFundo = '#61BD8C';
 
 export default class CenaContatos extends Component {
@@ -28,9 +25,10 @@ export default class CenaContatos extends Component {
                 </View>
 
                 <View style={styles.contatos}>
-                    <Text style={styles.txtContatos}>Tel: (21) 2222-2222</Text>
-                    <Text style={styles.txtContatos}>Cel: (21) 98867-9866</Text>
-                    <Text style={styles.txtContatos}>Email: julio.falbo.rj@gmail.com</Text>
+                    <Text style={styles.txtContatos}>Nome: Fernando</Text>
+                    <Text style={styles.txtContatos}>Tel: (44) 0000-0000</Text>
+                    <Text style={styles.txtContatos}>Cel: (44) 00000-0000</Text>
+                    <Text style={styles.txtContatos}>Email: fer.aeq@gmail.com</Text>
                 </View>
 
             </View>

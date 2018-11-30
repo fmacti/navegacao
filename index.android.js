@@ -8,38 +8,6 @@ import CenaContatos from './src/components/CenaContatos';
 import CenaEmpresas from './src/components/CenaEmpresas';
 import CenaServicos from './src/components/CenaServicos';
 
-//Preparei 2 opções para escolha de transação, uma no modelo de slider e a outra renderizando pelo centro
-//Slider: TransitionConfigurationSlider
-//Centro: TransitionConfigurationCenter
-//Basta escolher uma e seta na propriedade transitionConfig
-let TransitionConfigurationCenter = () => {
-  return {
-    screenInterpolator: (sceneProps) => {
-
-      const { position, scene } = sceneProps;
-      const { index } = scene;
-
-      const inputRange = [index - 1, index, index + 1];
-      const opacity = position.interpolate({
-        inputRange,
-        outputRange: [0.1, 1, 1],
-      });
-
-      const scaleY = position.interpolate({
-        inputRange,
-        outputRange: ([0.1, 1, 1]),
-      });
-
-      return {
-        opacity,
-        transform: [
-          { scaleY }
-        ]
-      };
-    }
-  }
-};
-
 let TransitionConfigurationSlider = () => {
   return {
     screenInterpolator: sceneProps => {
